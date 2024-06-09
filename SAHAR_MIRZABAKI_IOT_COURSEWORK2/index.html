@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Feeder Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body>
+    
+        <div  class="container">
+        <h1>Fish Feeder Control</h1>
+        
+        <div id="clock" class="clock"></div>
+        
+        <button class="feed-button" onclick="feedNow()">Feed Now</button>
+        
+        <h2>Schedule Feeding</h2>
+        <div class="timer">
+            <input type="time" id="timer1">
+            <button class="schedule-button" onclick="scheduleFeed(0, document.getElementById('timer1').value)">Set Timer 1</button>
+        </div>
+
+
+         
+    </div>
+ 
+      <!-- Authentication UI -->
+      <div id="auth-container" class="container">
+        <h1 >Login</h1>
+        <input type="email" id="email" class="inuput" placeholder="Email">
+        <input type="password" class="inuput" placeholder="Password">
+        <button  class="schedule-button" onclick="login()">Login</button>
+        
+    </div>
+<!-- Display Temperature and Humidity -->
+<div class="container">
+    <h2>Temprature</h2>
+    <p>Temperature: <span id="temperature">--</span> °C</p>
+    <p>Humidity: <span id="humidity">--</span> %</p>
+</div>
+   
+    <script src="app.js"></script>
+</body>
+</html>

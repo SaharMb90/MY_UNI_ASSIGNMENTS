@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px;
+    max-width: 600px;
+    height: -webkit-fill-available;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+#clock {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #555;
+}
+
+.feed-button, .schedule-button {
+    background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feed-button:hover, .schedule-button:hover {
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #625aa7, #d2141a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #625aa7, #d2141a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.timer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.inuput{
+    padding: 5px;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #dfdada;
+    border-radius: 4px;
+    
+}
+
+.column {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
